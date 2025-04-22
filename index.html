@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Ayurveda landing page" />
+        <title>Ayurveda Landing Page</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </head>
+    <body>
+        <!-- PAGE1 -->
+        <section
+            class="bg-[url('./public/images/resource_1/Mask%20Group%2036/MaskGroup36.png')] bg-no-repeat bg-cover bg-center text-gray-800"
+        >
+            <!-- Header -->
+            <header class="flex items-center justify-between px-6 py-4 shadow">
+                <img
+                    src="/public/images/resource_1/Group 59160/Group 59160.png"
+                    alt="logo_img"
+                    class="w-[10rem] md:ml-24"
+                />
+
+                <!-- Burger Button -->
+                <button id="burgerButton" class="block md:hidden text-gray-700 focus:outline-none">
+                    <svg
+                        class="w-6 h-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+
+                <!-- Navbar Links -->
+                <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
+                    <a href="#" class="text-green-600 border-b-2 border-green-600">Home</a>
+                    <a href="#">Our story</a>
+                    <a href="#">About Vithania</a>
+                    <a href="#">Our philosophy</a>
+                    <a href="#">Brand purpose</a>
+                    <a href="#">Contact us</a>
+                </nav>
+            </header>
+
+            <!-- Side Navbar , Visible on small screens -->
+            <div
+                id="sideNavbar"
+                class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+            >
+                <button id="closeButton" class="absolute top-4 right-4 text-gray-700 focus:outline-none">
+                    <svg
+                        class="w-6 h-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <nav class="flex flex-col space-y-4 p-6 text-sm font-medium text-gray-700">
+                    <a href="#" class="text-green-600 border-b-2 border-green-600">Home</a>
+                    <a href="#">Our story</a>
+                    <a href="#">About Vithania</a>
+                    <a href="#">Our philosophy</a>
+                    <a href="#">Brand purpose</a>
+                    <a href="#">Contact us</a>
+                </nav>
+            </div>
+
+            <script>
+                // JavaScript to toggle the side navbar
+                const burgerButton = document.getElementById("burgerButton");
+                const sideNavbar = document.getElementById("sideNavbar");
+                const closeButton = document.getElementById("closeButton");
+
+                burgerButton.addEventListener("click", () => {
+                    sideNavbar.classList.remove("translate-x-full");
+                });
+
+                closeButton.addEventListener("click", () => {
+                    sideNavbar.classList.add("translate-x-full");
+                });
+            </script>
+
+            <!-- Hero Section -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 py-16 items-center">
+                <!-- Left Content -->
+                <div class="space-y-4 md:ml-24">
+                    <h1 class="text-4xl font-bold">
+                        Embracing <br /><span class="text-green-700">Ayurvedic Excellence</span>
+                    </h1>
+                    <p class="text-gray-600 max-w-md">
+                        Experience nature's best choice with the advancements in Ayurveda contributing to your success
+                        story.
+                    </p>
+                    <button class="mt-4 bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition">
+                        Get an Appointment
+                    </button>
+                </div>
+
+                <!-- Right Image -->
+                <div class="flex justify-center">
+                    <img src="/public/images/resource_1/Group 59181/Group 59181.png" alt="hero" />
+                </div>
+            </section>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="bg-white py-8 px-8 relative">
+            <div class="grid grid-cols-2 md:grid-cols-4 text-center gap-6 max-w-5xl mx-auto">
+                <div>
+                    <div class="text-green-600 text-3xl font-bold">25</div>
+                    <p class="text-sm">Years Experience</p>
+                </div>
+                <div>
+                    <div class="text-green-600 text-3xl font-bold">50k+</div>
+                    <p class="text-sm">Happy customers</p>
+                </div>
+                <div>
+                    <div class="text-green-600 text-3xl font-bold">120+</div>
+                    <p class="text-sm">Products</p>
+                </div>
+                <div>
+                    <div class="text-green-600 text-3xl font-bold">100%</div>
+                    <p class="text-sm">Product purity</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 2 -->
+        <div class="w-full bg-white py-16 px-4 md:px-20 font-sans relative overflow-hidden">
+            <img
+                class="hidden lg:block absolute -right-[6rem] object-contain max-w-none"
+                src="./public/images/resource_2/Group 59187/Group 59187.png"
+                alt="vine_imgone"
+            />
+
+            <div class="max-w-7xl mx-auto space-y-16">
+                <!-- Section 1 -->
+                <div class="grid md:grid-cols-2 gap-10 items-center relative">
+                    <!-- Image and Badge -->
+                    <div class="relative">
+                        <img
+                            src="./public//images//resource_2/Mask Group 15/Mask Group 15.png"
+                            alt="Our Story"
+                            class="rounded-xl shadow-lg w-60% h-auto object-cover"
+                        />
+
+                        <!-- Experience Badge -->
+                        <div
+                            class="absolute -bottom-4 right-16 bg-green-600 text-white px-6 py-4 rounded-br-3xl shadow-md text-center"
+                        >
+                            <p class="text-7xl font-bold leading-tight">25</p>
+                            <p class="text-lg -mt-1 px-6">Years<br />Experience</p>
+                        </div>
+                        <!-- Side text - VITHANIA -->
+                        <div
+                            class="absolute -right-16 bottom-[20rem] text-gray-200 font-bold text-7xl -rotate-90 hidden lg:block select-none"
+                        >
+                            VITHANIA
+                        </div>
+                    </div>
+
+                    <!-- Text Content -->
+                    <div class="relative">
+                        <h2 class="text-3xl font-bold mb-4 flex items-center gap-2"><span>🌿</span> Our story</h2>
+                        <p class="text-gray-700 mb-4">
+                            In the serene town of Kayamkulam, nestled in Kerala’s Alappuzha district, Dr. A. Rajesh Kumar
+                            (Dr. ARK), founder of Vithania, discovered his passion for Ayurveda at a young age...
+                        </p>
+                        <ul class="space-y-2 text-green-700 font-medium">
+                            <li>✅ Phasellus pellentesque purus sit</li>
+                            <li>✅ Morbi a odio accumsan lorem</li>
+                            <li>✅ Cras luctus arcu at felis consequat</li>
+                            <li>✅ Nulla a felis a dui consectetur tempor.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="grid md:grid-cols-2 gap-10 items-center bg-white rounded-2xl p-6 shadow-lg border">
+                    <!-- Image -->
+                    <div>
+                        <img
+                            src="./public/images/resource_3/Mask Group 16.png"
+                            alt="Origin Image"
+                            class="rounded-xl shadow-md w-80% h-auto object-cover"
+                        />
+                    </div>
+
+                    <!-- Text Content -->
+                    <div>
+                        <p class="text-gray-700">
+                            Driven by a deep-rooted curiosity, he pursued organic chemistry during his college years,
+                            studying the phytoconstituents of herbs such as Ashwagandha. This foundation laid the groundwork
+                            for his later integration of Ayurvedic principles with modern scientific research. Later, he
+                            explored the intersection of Ayurveda and modern science, leading to pioneering research in
+                            diabetic medicines, earning him a PhD from Anna University and shaping his vision for Vithania.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="w-full bg-[#eafce7] p-6 md:p-10 rounded-tr-[180px] rounded-bl-[180px] my-24 relative">
+            <img
+                src="./public/images/resource_3/Group 59188.png"
+                class="hidden lg:block absolute -left-[5rem] -top-[22rem] object-contain max-w-none"
+                alt=""
+            />
+
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center py-32">
+                <!-- Left Image Section -->
+                <div class="relative">
+                    <!-- Main Image -->
+                    <img
+                        src="./public/images/resource_4/Mask Group 17.png"
+                        alt="Dummy image"
+                        class="rounded-xl shadow-lg"
+                    />
+
+                    <!-- Selected Image -->
+                    <img
+                        class="absolute -bottom-[3rem] left-[3rem] lg:-bottom-[5rem] lg:left-[3rem] w-[70%] rounded-3xl border-4 border-white shadow-md"
+                        src="./public/images/resource_4/vithania_cropimg.png"
+                        alt="Vithania Crop Image"
+                    />
+                </div>
+
+                <!-- Right Text Section -->
+                <div>
+                    <h2 class="mt-[5rem] mg:mt-0 text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                        🌿 Origin of the Brand Name<br />
+                        <span class="text-green-700">VITHANIA</span>
+                    </h2>
+                    <p class="text-gray-700 mb-4">
+                        As a curious young boy, Rajesh (Dr. A. Rajesh Kumar) watched his grandfather advise a ‘vaidyar’ to
+                        boil Ashwagandha (<em>Withania somnifera</em>) in milk. When he asked why, his grandfather smiled
+                        and said, “Ashwagandha holds both fat-soluble and water-soluble constituents. Milk unlocks them
+                        all.”
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        That moment sparked a lifelong fascination. Rajesh pursued organic chemistry, uncovering the science
+                        behind phytoconstituents and Ayurveda’s wisdom. The first herb that captivated him was Ashwagandha–
+                        nature’s powerhouse, just as his grandfather had said.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Years later, in honour of that revelation, Vithania was born — a name rooted in tradition, validated
+                        by science.
+                    </p>
+                    <p class="text-gray-700">
+                        This tribute celebrates the revelation that ignited a lifelong pursuit of innovation and discovery,
+                        reflecting our commitment to the ancient principles of Ayurvedic wellness.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="bg-white py-10 px-4 md:px-20">
+            <h2 class="text-3xl font-bold text-center mb-2">🌿 Our Processing</h2>
+            <p class="text-center text-gray-500 max-w-xl mx-auto mb-10">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's
+            </p>
+
+            <div class="relative items-center my-10">
+                <img
+                    src="./public/images/resource_3/Group 59188.png"
+                    class="hidden lg:block absolute -left-[10rem] -top-[20rem] object-contain max-w-none"
+                    alt=""
+                />
+                <img src="./public/images/resource_5/goodwill_map.png" alt="" />
+            </div>
+        </div>
+
+        <!-- section 5 -->
+        <!-- alpine.js - for toggle logic -->
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+        <div class="bg-green-50 py-[5rem] relative overflow-hidden" x-data="{ active: 0 } ">
+            <img
+                class="hidden lg:block absolute -right-[6rem] object-contain max-w-none"
+                src="./public/images/resource_2/Group 59187/Group 59187.png"
+                alt="vine_imgone"
+            />
+
+            <h2 class="text-3xl font-bold text-center mb-8 flex items-center justify-center gap-2">🌿 Our Philosophy</h2>
+
+            <div class="space-y-4 max-w-3xl mx-auto">
+                <!-- Accordion Item 1 -->
+                <div
+                    @click="active === 1 ? active = null : active = 1"
+                    class="cursor-pointer border rounded-lg overflow-hidden transition-all"
+                >
+                    <div class="flex items-center justify-between bg-white p-5">
+                        <div class="flex items-center gap-4">
+                            <span class="text-2xl font-semibold text-gray-300">01</span>
+                            <h3 class="font-medium text-lg">Harmony of Tradition and Innovation</h3>
+                        </div>
+                        <span class="text-xl">⌄</span>
+                    </div>
+                    <div x-show="active === 1" x-collapse class="bg-green-100 p-5 text-sm text-gray-600">
+                        Description for Harmony of Tradition and Innovation.
+                    </div>
+                </div>
+
+                <!-- Accordion Item 2 -->
+                <div
+                    @click="active === 2 ? active = null : active = 2"
+                    class="cursor-pointer border rounded-lg overflow-hidden transition-all"
+                >
+                    <div class="flex items-center justify-between bg-white p-5">
+                        <div class="flex items-center gap-4">
+                            <span class="text-2xl font-semibold text-gray-400">02</span>
+                            <h3 class="font-medium text-lg">Rooted in Legacy, Inspired by Innovation</h3>
+                        </div>
+                        <span class="text-xl">⌄</span>
+                    </div>
+                    <div x-show="active === 2" x-collapse class="bg-green-100 p-5 text-sm text-gray-700">
+                        Our heritage is rooted in a family legacy of esteemed Ayurvedic vaidyas, who dedicated their lives
+                        to the pursuit of healing and wellness. We honour this legacy by embracing innovation, driving
+                        progress, and advancing the frontiers of Ayurvedic science.
+                    </div>
+                </div>
+
+                <!-- Accordion Item 3 -->
+                <div
+                    @click="active === 3 ? active = null : active = 3"
+                    class="cursor-pointer border rounded-lg overflow-hidden transition-all"
+                >
+                    <div class="flex items-center justify-between bg-white p-5">
+                        <div class="flex items-center gap-4">
+                            <span class="text-2xl font-semibold text-gray-300">03</span>
+                            <h3 class="font-medium text-lg">Purpose-Driven Excellence</h3>
+                        </div>
+                        <span class="text-xl">⌄</span>
+                    </div>
+                    <div x-show="active === 3" x-collapse class="bg-green-100 p-5 text-sm text-gray-600">
+                        Description for Purpose-Driven Excellence.
+                    </div>
+                </div>
+
+                <!-- Accordion Item 4 -->
+                <div
+                    @click="active === 4 ? active = null : active = 4"
+                    class="cursor-pointer border rounded-lg overflow-hidden transition-all"
+                >
+                    <div class="flex items-center justify-between bg-white p-5">
+                        <div class="flex items-center gap-4">
+                            <span class="text-2xl font-semibold text-gray-300">04</span>
+                            <h3 class="font-medium text-lg">Community-Driven Transformation</h3>
+                        </div>
+                        <span class="text-xl">⌄</span>
+                    </div>
+                    <div x-show="active === 4" x-collapse class="bg-green-100 p-5 text-sm text-gray-600">
+                        Description for Community-Driven Transformation.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 6 -->
+
+        <img class="absolute" src="./public//images/resource_6/bg_sec7.png" alt="" />
+
+        <section class="text-white py-16 px-6 md:px-20 relative">
+            <img
+            src="./public/images/resource_6/vine_part6.png"
+            class="hidden lg:block absolute -left-[3rem] -top-[10rem] object-contain max-w-none"
+            alt=""
+        />
+            <div class="grid md:grid-cols-2 gap-10 items-center relative z-10">
+                <!-- Left Content -->
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold flex items-center gap-2 mb-6">🌿 Brand Purpose</h2>
+                    <p class="text-sm md:text-base text-gray-300 mb-4">
+                        Vithania’s purpose is rooted in the selfless legacy of our founder’s grandfather, who researched and
+                        formulated various combinations for different ailments, prepared remedies for those in need, and
+                        provided guidance to vaidyas and manufacturers.
+                    </p>
+                    <p class="text-sm md:text-base text-gray-300 mb-6">
+                        Inspired by this, Vithania continues the legacy of crafting innovative remedies, guiding others, and
+                        sharing expertise. Today, we fulfill this purpose through:
+                    </p>
+
+                    <!-- Purpose Cards -->
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 rounded-lg">
+                            <img src="./public//images/resource_6//1.png" class="w-10 h-10" alt="icon" />
+                            <div>
+                                <h4 class="font-semibold text-white">Contract research</h4>
+                                <p class="text-sm text-gray-400">
+                                    Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-lg">
+                            <img src="./public/images/resource_6/2.png" class="w-10 h-10" alt="icon" />
+                            <div>
+                                <h4 class="font-semibold text-white">
+                                    Private label and own manufacturing of innovative products
+                                </h4>
+                                <p class="text-sm text-gray-400">
+                                    Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-lg">
+                            <img src="./public/images/resource_6/3.png" class="w-10 h-10" alt="icon" />
+                            <div>
+                                <h4 class="font-semibold text-white">
+                                    Technical training that empowers the next generation
+                                </h4>
+                                <p class="text-sm text-gray-400">
+                                    Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="relative">
+                    <!-- Green Opaque Background -->
+                    <div class="absolute -top-[2rem] left-[2rem] w-[20rem] h-[30rem] bg-green-500 opacity-30 rounded-2xl"></div>
+                
+                    <!-- Image Container -->
+                    <div class="rounded-2xl overflow-hidden w-full max-w-md mx-auto relative z-10">
+                        <img
+                            src="./public/images/resource_6/Mask Group 22.png"
+                            alt="Brand Purpose"
+                            class="w-full h-auto object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom  -->
+
+            <div class="mt-[12rem] text-white relative">
+                <img class="absolute object-cover" src="./public//images//resource_6/Group 59194.png" alt="bg-good-image" />
+
+                <div class="grid md:grid-cols-2 gap-6 items-center relative z-10 p-10 ">
+                    <div>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-2">Ready to partner with us?</h3>
+                        <p class="text-sm md:text-base text-white/90 mb-4">
+                            It is a long established fact that a reader will be distracted by
+                        </p>
+                        <button
+                            class="bg-white text-green-600 px-6 py-2 rounded-full font-semibold shadow-md hover:bg-gray-100 transition"
+                        >
+                            Book an Appointment
+                        </button>
+                    </div>
+                    <div class="hidden md:block flex justify-center md:justify-end">
+                        <img
+                            src="./public//images/resource_6/Mask Group 37.png"
+                            class="w-[20rem] mt-[1rem] absolute"
+                            alt="Oil bottles"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7 -->
+
+        <section class="py-16 px-5 md:px-[15rem] bg-white text-gray-800 relative 
+        overflow-hidden ">
+            <img
+            class="hidden lg:block absolute -right-[6rem] object-contain max-w-none"
+            src="./public/images/resource_2/Group 59187/Group 59187.png"
+            alt="vine_imgone"
+        />
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <!-- Our Vision -->
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold flex items-center gap-2 mb-4">🌿 Our Vision</h2>
+                    <div class="overflow-hidden rounded-2xl mb-6">
+                        <img
+                            src="./public/images/resource_7/imag_left.png"
+                            alt="Vision Image"
+                            class="w-full object-cover"
+                        />
+                    </div>
+                    <p class="text-sm md:text-base mb-4">
+                        To emerge as a global pioneer in Ayurveda-inspired wellness, harmoniously integrating timeless
+                        traditions with cutting-edge science to craft high-quality, innovative, effective, and eco-friendly
+                        herbal solutions that transform lives worldwide.
+                    </p>
+                    <p class="text-sm md:text-base mb-4">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s...
+                    </p>
+                    <p class="text-sm md:text-base">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature...
+                    </p>
+                </div>
+
+                <!-- Our Mission -->
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold flex items-center gap-2 mb-4">🌿 Our Mission</h2>
+                    <div class="overflow-hidden rounded-2xl mb-6">
+                        <img
+                            src="./public/images/resource_7/sec8_imag_right.png"
+                            alt="Mission Image"
+                            class="w-full object-cover"
+                        />
+                    </div>
+                    <ul class="space-y-4 text-sm md:text-base text-gray-700">
+                        <li class="flex items-start gap-3">
+                            ✅
+                            <span
+                                >To research, develop, and manufacture high-quality, efficacious Ayurvedic and herbal
+                                products that meet global standards.</span
+                            >
+                        </li>
+                        <li class="flex items-start gap-3">
+                            ✅
+                            <span
+                                >To uphold the authenticity and purity of traditional Ayurvedic principles while integrating
+                                advanced scientific methodologies to enhance effectiveness.</span
+                            >
+                        </li>
+                        <li class="flex items-start gap-3">
+                            ✅
+                            <span
+                                >To educate and empower individuals and professionals through knowledge-sharing and
+                                technical training.</span
+                            >
+                        </li>
+                        <li class="flex items-start gap-3">
+                            ✅
+                            <span
+                                >To deliver effective, safe, and sustainable wellness solutions that promote holistic
+                                well-being, nurture the environment, and inspire a healthier, happier world.</span
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8 -->
+
+        <section
+        class="bg-cover bg-center py-[10rem] px-6 md:px-20  text-white relative"
+        style="background-image: url('./public/images/resource_8/Mask Group 38.png')"
+    >
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
+            <!-- First Box: Heading and Text -->
+            <div class="space-y-6">
+                <h2 class="text-3xl md:text-4xl font-bold flex items-center gap-2">🌿 Our Core Values</h2>
+                <p class="text-sm md:text-base text-white/90">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it
+                </p>
+                <a
+                    href="#"
+                    class="inline-block px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-full transition duration-300"
+                >
+                    Get an Appointment
+                </a>
+            </div>
+    
+            <!-- Second Box -->
+            <div class="bg-white text-gray-800 p-6 rounded-2xl shadow-md">
+                <div class="text-green-600 text-2xl font-semibold mb-2">💎 Quality</div>
+                <p class="text-sm mb-4">
+                    Ensuring purity, efficacy, and safety in every product we create, showcasing unwavering excellence.
+                </p>
+                <img
+                    src="./public/images/resource_8/gpImg1.png"
+                    alt="Quality"
+                    class="rounded-lg w-full h-20 object-cover"
+                />
+            </div>
+    
+            <!-- Third Box -->
+            <div class="bg-white text-gray-800 p-6 rounded-2xl shadow-md">
+                <div class="text-green-600 text-2xl font-semibold mb-2">🌿 Authenticity</div>
+                <p class="text-sm mb-4">
+                    Staying true to Ayurveda’s timeless principles while embracing innovation.
+                </p>
+                <img
+                    src="./public/images/resource_8/gpImg2.png"
+                    alt="Authenticity"
+                    class="rounded-lg w-full h-20 object-cover"
+                />
+            </div>
+    
+            <!-- Fourth Box -->
+            <div class="bg-white text-gray-800 p-6 rounded-2xl shadow-md">
+                <div class="text-green-600 text-2xl font-semibold mb-2">🛡️ Integrity</div>
+                <p class="text-sm mb-4">
+                    Maintaining the highest ethical standards in research, production, and customer relations.
+                </p>
+                <img
+                    src="./public/images/resource_8/gpImg3.png"
+                    alt="Integrity"
+                    class="rounded-lg w-full h-20 object-cover"
+                />
+            </div>
+    
+            <!-- Fifth Box -->
+            <div class="bg-white text-gray-800 p-6 rounded-2xl shadow-md">
+                <div class="text-green-600 text-2xl font-semibold mb-2">🌱 Sustainability</div>
+                <p class="text-sm mb-4">
+                    We respect the environment, source responsibly, and promote eco-friendly practices to preserve a
+                    healthier planet.
+                </p>
+                <img
+                    src="./public/images/resource_8/gpImg4.png"
+                    alt="Sustainability"
+                    class="rounded-lg w-full h-20 object-cover"
+                />
+            </div>
+    
+            <!-- Sixth Box -->
+            <div class="bg-white text-gray-800 p-6 rounded-2xl shadow-md">
+                <div class="text-green-600 text-2xl font-semibold mb-2">💪 Empowerment</div>
+                <p class="text-sm mb-4">
+                    Sharing knowledge and expertise to strengthen quality practices worldwide.
+                </p>
+                <img
+                    src="./public/images/resource_8/gpImg5.png"
+                    alt="Empowerment"
+                    class="rounded-lg w-full h-20 object-cover"
+                />
+            </div>
+    
+          
+        </div>
+    </section>
+
+        <!-- section 9 -->
+
+        <section class="bg-white relative overflow-hidden py-[10rem] px-6 md:px-20">
+            <img
+            class="hidden lg:block absolute -top-[5rem] -right-[6rem] object-contain max-w-none"
+            src="./public/images/resource_10/Group 59198.png"
+            alt="vine_imgone"
+        />
+            <!-- Heading -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 flex items-center justify-center gap-2">🌿 Contact with us</h2>
+                <p class="text-gray-500 mt-2 text-sm md:text-base">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's
+                </p>
+            </div>
+
+            <!-- Form Section -->
+            <form class="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
+                <!-- Left Side: Inputs -->
+                <div class="space-y-4">
+                    <input
+                        type="text"
+                        placeholder="Enter name"
+                        class="w-full px-4 py-3 rounded-full bg-green-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-400"
+                    />
+                    <input
+                        type="email"
+                        placeholder="Enter Email"
+                        class="w-full px-4 py-3 rounded-full bg-green-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-400"
+                    />
+
+                    <!-- Phone Field -->
+                    <div class="flex items-center gap-2">
+                        <select class="px-3 py-3 rounded-full bg-green-50 border border-gray-200">
+                            <option value="+91">🇮🇳 +91</option>
+                            <!-- Add more if needed -->
+                        </select>
+                        <input
+                            type="tel"
+                            placeholder="00 00 00 00 00"
+                            class="flex-1 px-4 py-3 rounded-full bg-green-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-400 z-10"
+                        />
+                    </div>
+                </div>
+
+                <!-- Right Side: Message -->
+                <div>
+                    <textarea
+                        placeholder="Enter message here"
+                        rows="6"
+                        class="w-full z-10 px-4 py-3 rounded-xl bg-green-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-400 resize-none"
+                    ></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="md:col-span-2 flex justify-end z-10">
+                    <button
+                        type="submit"
+                        class="px-8 py-3 bg-gradient-to-r from-green-700 to-green-500 hover:from-green-600 hover:to-green-800 text-white font-semibold rounded-full transition duration-300"
+                    >
+                        SUBMIT
+                    </button>
+                </div>
+            </form>
+
+            <!-- Decorative Images (Optional placeholders) -->
+            <div class="absolute bottom-0 left-0 w-full">
+                <img
+                    src="./public/images/resource_9/res9_random.png"
+                    alt="Decorative Bottles"
+                    class="w-full object-cover"
+                />
+            </div>
+        </section>
+
+        <!-- Section 10 -->
+        <div class="bg-gray-50">
+            <div class="container mx-auto">
+                <!-- Top Header with Contact Info -->
+                <div class="bg-white py-4">
+                    <div class="flex flex-col md:flex-row justify-between items-center px-4">
+                        <!-- Logo -->
+                        <div class="mb-4 md:mb-0 ml-[5rem]">
+                            <div class="flex items-center">
+                                <img src="./public/images/resource_1/Group 59160/Group 59160.png" alt="logo_footer" />
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-center">
+                            <div class="bg-green-500 rounded-full p-2 mr-3">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-xs">Contact Us</p>
+                                <p class="font-medium">+91 999 999 000</p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-center">
+                            <div class="bg-green-500 rounded-full p-2 mr-3">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-xs">Make a quote</p>
+                                <p class="font-medium">info@vithania.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="flex items-center">
+                            <div class="bg-green-500 rounded-full p-2 mr-3">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-xs">Location</p>
+                                <p class="font-medium">Lorem Ipsum is simply</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Menu -->
+                <div class="bg-gray-100 flex flex-col md:flex-row justify-between items-center py-3 px-6" style="background-color: #e1ecc3">
+                    <!-- Menu Items -->
+                    <nav class="flex flex-col lg:flex lg:flex-row space-x-8 text-gray-700">
+                        <a href="#" class="hover:text-green-600 transition">Home</a>
+                        <a href="#" class="hover:text-green-600 transition">Our story</a>
+                        <a href="#" class="hover:text-green-600 transition">About Vithania</a>
+                        <a href="#" class="hover:text-green-600 transition">Our philosophy</a>
+                        <a href="#" class="hover:text-green-600 transition">Brand purpose</a>
+                        <a href="#" class="hover:text-green-600 transition">Contact us</a>
+                    </nav>
+
+                    <!-- Social Media Icons -->
+                    <div class="flex space-x-2 mt-4 md:mt-0" >
+                        <a
+                            href="#"
+                            class="text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700 transition"
+                            style="background-color: #84a32e"
+                        >
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a
+                            href="#"
+                            class="text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700 transition"
+                            style="background-color: #84a32e"
+                        >
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                            <a
+                                href="#"
+                                class="text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700 transition"
+                                style="background-color: #84a32e"
+                            >
+                            <i class="fab fa-twitter"></i>
+                            </a>
+                        </a>
+                            <a
+                                href="#"
+                                class="text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700 transition"
+                                style="background-color: #84a32e"
+                            >
+                            <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="py-3 text-center text-sm text-gray-600">
+                    <p>@ Copyright 2025 VITHANIA. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
